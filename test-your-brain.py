@@ -34,7 +34,7 @@ def startCountDown():
     if timer >= 0:
         time_left.config(text="Game ends in : " + str(timer) + "s")
         timer -= 1
-        time_left.after(10, startCountDown)
+        time_left.after(1000, startCountDown)
         if timer == -1:
             time_left.config(text="Game over!!!")
 
